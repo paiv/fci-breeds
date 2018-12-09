@@ -24,15 +24,15 @@ id,name,section,provisional,country,url,image,pdf
 25,BILLY,Scent hounds,,FRANCE,http://www.fci.be/en/nomenclature/BILLY-25.html,http://www.fci.be/Nomenclature/Illustrations/025g06.jpg,http://www.fci.be/Nomenclature/Standards/025g06-en.pdf
 28,ARTOIS HOUND,Scent hounds,,FRANCE,http://www.fci.be/en/nomenclature/ARTOIS-HOUND-28.html,http://www.fci.be/Nomenclature/Illustrations/028g06.jpg,http://www.fci.be/Nomenclature/Standards/028g06-en.pdf
 30,PORCELAINE,Scent hounds,,FRANCE,http://www.fci.be/en/nomenclature/PORCELAINE-30.html,http://www.fci.be/Nomenclature/Illustrations/030g06.jpg,http://www.fci.be/Nomenclature/Standards/030g06-en.pdf
-31,SMALL BLUE GASCONY BLUE,Scent hounds,,FRANCE,http://www.fci.be/en/nomenclature/SMALL-BLUE-GASCONY-BLUE-31.html,,http://www.fci.be/Nomenclature/Standards/031g06-en.pdf
+31,SMALL BLUE GASCONY,Scent hounds,,FRANCE,http://www.fci.be/en/nomenclature/SMALL-BLUE-GASCONY-31.html,,http://www.fci.be/Nomenclature/Standards/031g06-en.pdf
 32,BLUE GASCONY GRIFFON,Scent hounds,,FRANCE,http://www.fci.be/en/nomenclature/BLUE-GASCONY-GRIFFON-32.html,,http://www.fci.be/Nomenclature/Standards/032g06-en.pdf
 33,GRAND BASSET GRIFFON VENDEEN,Scent hounds,,FRANCE,http://www.fci.be/en/nomenclature/GRAND-BASSET-GRIFFON-VENDEEN-33.html,,http://www.fci.be/Nomenclature/Standards/033g06-en.pdf
 34,NORMAN ARTESIEN BASSET,Scent hounds,,FRANCE,http://www.fci.be/en/nomenclature/NORMAN-ARTESIEN-BASSET-34.html,,http://www.fci.be/Nomenclature/Standards/034g06-en.pdf
 35,BLUE GASCONY BASSET,Scent hounds,,FRANCE,http://www.fci.be/en/nomenclature/BLUE-GASCONY-BASSET-35.html,,http://www.fci.be/Nomenclature/Standards/035g06-en.pdf
 36,BASSET FAUVE DE BRETAGNE,Scent hounds,,FRANCE,http://www.fci.be/en/nomenclature/BASSET-FAUVE-DE-BRETAGNE-36.html,,http://www.fci.be/Nomenclature/Standards/036g06-en.pdf
 37,PORTUGUESE WATER DOG,Water Dogs,,PORTUGAL,http://www.fci.be/en/nomenclature/PORTUGUESE-WATER-DOG-37.html,http://www.fci.be/Nomenclature/Illustrations/037g08.jpg,http://www.fci.be/Nomenclature/Standards/037g08-en.pdf
-38,WELSH CORGI CARDIGAN,Sheepdogs,,GREAT BRITAIN,http://www.fci.be/en/nomenclature/WELSH-CORGI-CARDIGAN-38.html,http://www.fci.be/Nomenclature/Illustrations/038g01.jpg,http://www.fci.be/Nomenclature/Standards/038g01-en.pdf
-39,WELSH CORGI PEMBROKE,Sheepdogs,,GREAT BRITAIN,http://www.fci.be/en/nomenclature/WELSH-CORGI-PEMBROKE-39.html,http://www.fci.be/Nomenclature/Illustrations/039g01.jpg,http://www.fci.be/Nomenclature/Standards/039g01-en.pdf
+38,WELSH CORGI (CARDIGAN),Sheepdogs,,GREAT BRITAIN,http://www.fci.be/en/nomenclature/WELSH-CORGI-CARDIGAN-38.html,http://www.fci.be/Nomenclature/Illustrations/038g01.jpg,http://www.fci.be/Nomenclature/Standards/038g01-en.pdf
+39,WELSH CORGI (PEMBROKE),Sheepdogs,,GREAT BRITAIN,http://www.fci.be/en/nomenclature/WELSH-CORGI-PEMBROKE-39.html,http://www.fci.be/Nomenclature/Illustrations/039g01.jpg,http://www.fci.be/Nomenclature/Standards/039g01-en.pdf
 40,IRISH SOFT COATED WHEATEN TERRIER,Large and medium sized Terriers,,IRELAND,http://www.fci.be/en/nomenclature/IRISH-SOFT-COATED-WHEATEN-TERRIER-40.html,,http://www.fci.be/Nomenclature/Standards/040g03-en.pdf
 41,YUGOSLAVIAN SHEPHERD DOG - SHARPLANINA,Molossian type,,"MACEDONIA, SERBIA",http://www.fci.be/en/nomenclature/YUGOSLAVIAN-SHEPHERD-DOG-SHARPLANINA-41.html,,http://www.fci.be/Nomenclature/Standards/041g02-en.pdf
 42,JÄMTHUND,Nordic Hunting Dogs,,SWEDEN,http://www.fci.be/en/nomenclature/JAMTHUND-42.html,http://www.fci.be/Nomenclature/Illustrations/042g05.jpg,http://www.fci.be/Nomenclature/Standards/042g05-en.pdf
@@ -138,7 +138,7 @@ id,name,section,provisional,country,url,image,pdf
 145,LEONBERGER,Molossian type,,GERMANY,http://www.fci.be/en/nomenclature/LEONBERGER-145.html,,http://www.fci.be/Nomenclature/Standards/145g02-en.pdf
 146,RHODESIAN RIDGEBACK,Related breeds,,SOUTH AFRICA,http://www.fci.be/en/nomenclature/RHODESIAN-RIDGEBACK-146.html,,http://www.fci.be/Nomenclature/Standards/146g06-en.pdf
 147,ROTTWEILER,Molossian type,,GERMANY,http://www.fci.be/en/nomenclature/ROTTWEILER-147.html,,http://www.fci.be/Nomenclature/Standards/147g02-en.pdf
-148,DACHSHUND,None,,GERMANY,http://www.fci.be/en/nomenclature/DACHSHUND-148.html,http://www.fci.be/Nomenclature/Illustrations/148g04-1.jpg,http://www.fci.be/Nomenclature/Standards/148g04-en.pdf
+148,DACHSHUND,,,GERMANY,http://www.fci.be/en/nomenclature/DACHSHUND-148.html,http://www.fci.be/Nomenclature/Illustrations/148g04-1.jpg,http://www.fci.be/Nomenclature/Standards/148g04-en.pdf
 149,BULLDOG,Molossian type,,GREAT BRITAIN,http://www.fci.be/en/nomenclature/BULLDOG-149.html,http://www.fci.be/Nomenclature/Illustrations/149g02.jpg,http://www.fci.be/Nomenclature/Standards/149g02-en.pdf
 150,SERBIAN HOUND,Scent hounds,,SERBIA,http://www.fci.be/en/nomenclature/SERBIAN-HOUND-150.html,http://www.fci.be/Nomenclature/Illustrations/150g06.jpg,http://www.fci.be/Nomenclature/Standards/150g06-en.pdf
 151,ISTRIAN SHORT-HAIRED HOUND,Scent hounds,,CROATIA,http://www.fci.be/en/nomenclature/ISTRIAN-SHORT-HAIRED-HOUND-151.html,http://www.fci.be/Nomenclature/Illustrations/151g06.jpg,http://www.fci.be/Nomenclature/Standards/151g06-en.pdf
@@ -177,7 +177,7 @@ id,name,section,provisional,country,url,image,pdf
 186,AFFENPINSCHER,Pinscher and Schnauzer type,,GERMANY,http://www.fci.be/en/nomenclature/AFFENPINSCHER-186.html,http://www.fci.be/Nomenclature/Illustrations/186g02.jpg,http://www.fci.be/Nomenclature/Standards/186g02-en.pdf
 187,PORTUGUESE POINTING DOG,Continental Pointing Dogs,,PORTUGAL,http://www.fci.be/en/nomenclature/PORTUGUESE-POINTING-DOG-187.html,http://www.fci.be/Nomenclature/Illustrations/187g07.jpg,http://www.fci.be/Nomenclature/Standards/187g07-en.pdf
 188,SLOUGHI,Short-haired Sighthounds,,MOROCCO,http://www.fci.be/en/nomenclature/SLOUGHI-188.html,,http://www.fci.be/Nomenclature/Standards/188g10-en.pdf
-189,FINNISH LAPPHUND,Nordic Watchdogs and Herders,,FINLAND,http://www.fci.be/en/nomenclature/FINNISH-LAPPHUND-189.html,,http://www.fci.be/Nomenclature/Standards/189g05-en.pdf
+189,FINNISH LAPPONIAN DOG,Nordic Watchdogs and Herders,,FINLAND,http://www.fci.be/en/nomenclature/FINNISH-LAPPONIAN-DOG-189.html,http://www.fci.be/Nomenclature/Illustrations/189g05-1.jpg,http://www.fci.be/Nomenclature/Standards/189g05-en.pdf
 190,HOVAWART,Molossian type,,GERMANY,http://www.fci.be/en/nomenclature/HOVAWART-190.html,,http://www.fci.be/Nomenclature/Standards/190g02-en.pdf
 191,BOUVIER DES FLANDRES,Cattledogs (except Swiss Cattledogs),,"BELGIUM, FRANCE",http://www.fci.be/en/nomenclature/BOUVIER-DES-FLANDRES-191.html,,http://www.fci.be/Nomenclature/Standards/191g01-en.pdf
 192,KROMFOHRLÄNDER,Kromfohrländer,,GERMANY,http://www.fci.be/en/nomenclature/KROMFOHRLANDER-192.html,http://www.fci.be/Nomenclature/Illustrations/192g09.jpg,http://www.fci.be/Nomenclature/Standards/192g09-en.pdf
@@ -186,11 +186,11 @@ id,name,section,provisional,country,url,image,pdf
 195,ITALIAN VOLPINO,European Spitz,,ITALY,http://www.fci.be/en/nomenclature/ITALIAN-VOLPINO-195.html,,http://www.fci.be/Nomenclature/Standards/195g05-en.pdf
 196,BOLOGNESE,Bichons and related breeds,,ITALY,http://www.fci.be/en/nomenclature/BOLOGNESE-196.html,,http://www.fci.be/Nomenclature/Standards/196g09-en.pdf
 197,NEAPOLITAN MASTIFF,Molossian type,,ITALY,http://www.fci.be/en/nomenclature/NEAPOLITAN-MASTIFF-197.html,,http://www.fci.be/Nomenclature/Standards/197g02-en.pdf
-198,ITALIAN ROUGH-HAIRED SEGUGIO,Scent hounds,,ITALY,http://www.fci.be/en/nomenclature/ITALIAN-ROUGH-HAIRED-SEGUGIO-198.html,http://www.fci.be/Nomenclature/Illustrations/198g06.jpg,http://www.fci.be/Nomenclature/Standards/198g06-en.pdf
+198,ITALIAN ROUGH-HAIRED SEGUGIO,Scent hounds,,ITALY,http://www.fci.be/en/nomenclature/ITALIAN-ROUGH-HAIRED-SEGUGIO-198.html,,http://www.fci.be/Nomenclature/Standards/198g06-en.pdf
 199,CIRNECO DELL'ETNA,Primitive type - Hunting Dogs,,ITALY,http://www.fci.be/en/nomenclature/CIRNECO-DELL-ETNA-199.html,,http://www.fci.be/Nomenclature/Standards/199g05-en.pdf
-200,ITALIAN GREYHOUND,Short-haired Sighthounds,,ITALY,http://www.fci.be/en/nomenclature/ITALIAN-GREYHOUND-200.html,,http://www.fci.be/Nomenclature/Standards/200g10-en.pdf
+200,ITALIAN SIGHTHOUND,Short-haired Sighthounds,,ITALY,http://www.fci.be/en/nomenclature/ITALIAN-SIGHTHOUND-200.html,,http://www.fci.be/Nomenclature/Standards/200g10-en.pdf
 201,MAREMMA AND THE ABRUZZES SHEEPDOG,Sheepdogs,,ITALY,http://www.fci.be/en/nomenclature/MAREMMA-AND-THE-ABRUZZES-SHEEPDOG-201.html,,http://www.fci.be/Nomenclature/Standards/201g01-en.pdf
-202,ITALIAN POINTING DOG,Continental Pointing Dogs,,ITALY,http://www.fci.be/en/nomenclature/ITALIAN-POINTING-DOG-202.html,,http://www.fci.be/Nomenclature/Standards/202g07-en.pdf
+202,ITALIAN POINTING DOG,Continental Pointing Dogs,,ITALY,http://www.fci.be/en/nomenclature/ITALIAN-POINTING-DOG-202.html,http://www.fci.be/Nomenclature/Illustrations/202g07.jpg,http://www.fci.be/Nomenclature/Standards/202g07-en.pdf
 203,NORWEGIAN HOUND,Scent hounds,,NORWAY,http://www.fci.be/en/nomenclature/NORWEGIAN-HOUND-203.html,http://www.fci.be/Nomenclature/Illustrations/203g06.jpg,http://www.fci.be/Nomenclature/Standards/203g06-en.pdf
 204,SPANISH HOUND,Scent hounds,,SPAIN,http://www.fci.be/en/nomenclature/SPANISH-HOUND-204.html,,http://www.fci.be/Nomenclature/Standards/204g06-en.pdf
 205,CHOW CHOW,Asian Spitz and related breeds,,CHINA,http://www.fci.be/en/nomenclature/CHOW-CHOW-205.html,http://www.fci.be/Nomenclature/Illustrations/205g05.jpg,http://www.fci.be/Nomenclature/Standards/205g05-en.pdf
@@ -198,19 +198,20 @@ id,name,section,provisional,country,url,image,pdf
 207,PEKINGESE,Japan Chin and Pekingese,,CHINA,http://www.fci.be/en/nomenclature/PEKINGESE-207.html,http://www.fci.be/Nomenclature/Illustrations/207g09.jpg,http://www.fci.be/Nomenclature/Standards/207g09-en.pdf
 208,SHIH TZU,Tibetan breeds,,Tibet (China),http://www.fci.be/en/nomenclature/SHIH-TZU-208.html,http://www.fci.be/Nomenclature/Illustrations/208g09.jpg,http://www.fci.be/Nomenclature/Standards/208g09-en.pdf
 209,TIBETAN TERRIER,Tibetan breeds,,Tibet (China),http://www.fci.be/en/nomenclature/TIBETAN-TERRIER-209.html,http://www.fci.be/Nomenclature/Illustrations/209g09.jpg,http://www.fci.be/Nomenclature/Standards/209g09-en.pdf
+211,CANADIAN ESKIMO DOG,Nordic Sledge Dogs,,CANADA,http://www.fci.be/en/nomenclature/CANADIAN-ESKIMO-DOG-211.html,http://www.fci.be/Nomenclature/Illustrations/211g05.jpg,http://www.fci.be/Nomenclature/Standards/211g05-en.pdf
 212,SAMOYED,Nordic Sledge Dogs,,"NORTHERN RUSSIA, SIBERIA",http://www.fci.be/en/nomenclature/SAMOYED-212.html,http://www.fci.be/Nomenclature/Illustrations/212g05.jpg,http://www.fci.be/Nomenclature/Standards/212g05-en.pdf
-213,HANOVERIAN SCENTHOUND,Leash (scent) Hounds,,GERMANY,http://www.fci.be/en/nomenclature/HANOVERIAN-SCENTHOUND-213.html,http://www.fci.be/Nomenclature/Illustrations/213g06-1.jpg,http://www.fci.be/Nomenclature/Standards/213g06-en.pdf
+213,HANOVERIAN SCENT HOUND,Leash (scent) Hounds,,GERMANY,http://www.fci.be/en/nomenclature/HANOVERIAN-SCENT-HOUND-213.html,http://www.fci.be/Nomenclature/Illustrations/213g06-1.jpg,http://www.fci.be/Nomenclature/Standards/213g06-en.pdf
 214,HELLENIC HOUND,Scent hounds,,GREECE,http://www.fci.be/en/nomenclature/HELLENIC-HOUND-214.html,,http://www.fci.be/Nomenclature/Standards/214g06-en.pdf
-215,BICHON FRISE,Bichons and related breeds,,"BELGIUM, FRANCE",http://www.fci.be/en/nomenclature/BICHON-FRISE-215.html,,http://www.fci.be/Nomenclature/Standards/215g09-en.pdf
+215,BICHON FRISE,Bichons and related breeds,,"BELGIUM, FRANCE",http://www.fci.be/en/nomenclature/BICHON-FRISE-215.html,http://www.fci.be/Nomenclature/Illustrations/215g09-1.jpg,http://www.fci.be/Nomenclature/Standards/215g09-en.pdf
 216,PUDELPOINTER,Continental Pointing Dogs,,GERMANY,http://www.fci.be/en/nomenclature/PUDELPOINTER-216.html,,http://www.fci.be/Nomenclature/Standards/216g07-en.pdf
-217,BAVARIAN MOUNTAIN SCENT HOUND,Leash (scent) Hounds,,GERMANY,http://www.fci.be/en/nomenclature/BAVARIAN-MOUNTAIN-SCENT-HOUND-217.html,http://www.fci.be/Nomenclature/Illustrations/217g06.jpg,http://www.fci.be/Nomenclature/Standards/217g06-en.pdf
+217,BAVARIAN MOUNTAIN SCENT HOUND,Leash (scent) Hounds,,GERMANY,http://www.fci.be/en/nomenclature/BAVARIAN-MOUNTAIN-SCENT-HOUND-217.html,http://www.fci.be/Nomenclature/Illustrations/217g06-1.jpg,http://www.fci.be/Nomenclature/Standards/217g06-en.pdf
 218,CHIHUAHUA,Chihuahueno,,MEXICO,http://www.fci.be/en/nomenclature/CHIHUAHUA-218.html,http://www.fci.be/Nomenclature/Illustrations/218g09-1.jpg,http://www.fci.be/Nomenclature/Standards/218g09-en.pdf
 219,FRENCH TRICOLOUR HOUND,Scent hounds,,FRANCE,http://www.fci.be/en/nomenclature/FRENCH-TRICOLOUR-HOUND-219.html,,http://www.fci.be/Nomenclature/Standards/219g06-en.pdf
 220,FRENCH WHITE & BLACK HOUND,Scent hounds,,FRANCE,http://www.fci.be/en/nomenclature/FRENCH-WHITE-BLACK-HOUND-220.html,http://www.fci.be/Nomenclature/Illustrations/220g06.jpg,http://www.fci.be/Nomenclature/Standards/220g06-en.pdf
 221,FRISIAN WATER DOG,Water Dogs,,THE NETHERLANDS,http://www.fci.be/en/nomenclature/FRISIAN-WATER-DOG-221.html,,http://www.fci.be/Nomenclature/Standards/221g08-en.pdf
 222,STABIJHOUN,Continental Pointing Dogs,,THE NETHERLANDS,http://www.fci.be/en/nomenclature/STABIJHOUN-222.html,http://www.fci.be/Nomenclature/Illustrations/222g07-1.jpg,http://www.fci.be/Nomenclature/Standards/222g07-en.pdf
 223,DUTCH SHEPHERD DOG,Sheepdogs,,THE NETHERLANDS,http://www.fci.be/en/nomenclature/DUTCH-SHEPHERD-DOG-223.html,http://www.fci.be/Nomenclature/Illustrations/223g01-1.jpg,http://www.fci.be/Nomenclature/Standards/223g01-en.pdf
-224,DRENTSCHE PARTRIDGE DOG,Continental Pointing Dogs,,THE NETHERLANDS,http://www.fci.be/en/nomenclature/DRENTSCHE-PARTRIDGE-DOG-224.html,,http://www.fci.be/Nomenclature/Standards/224g07-en.pdf
+224,DRENTSCHE PARTRIDGE DOG,Continental Pointing Dogs,,THE NETHERLANDS,http://www.fci.be/en/nomenclature/DRENTSCHE-PARTRIDGE-DOG-224.html,http://www.fci.be/Nomenclature/Illustrations/224g07-1.jpg,http://www.fci.be/Nomenclature/Standards/224g07-en.pdf
 225,FILA BRASILEIRO,Molossian type,,BRAZIL,http://www.fci.be/en/nomenclature/FILA-BRASILEIRO-225.html,http://www.fci.be/Nomenclature/Illustrations/225g02.jpg,http://www.fci.be/Nomenclature/Standards/225g02-en.pdf
 226,LANDSEER (EUROPEAN CONTINENTAL TYPE),Molossian type,,"GERMANY, SWITZERLAND",http://www.fci.be/en/nomenclature/LANDSEER-EUROPEAN-CONTINENTAL-TYPE-226.html,,http://www.fci.be/Nomenclature/Standards/226g02-en.pdf
 227,LHASA APSO,Tibetan breeds,,Tibet (China),http://www.fci.be/en/nomenclature/LHASA-APSO-227.html,http://www.fci.be/Nomenclature/Illustrations/227g09.jpg,http://www.fci.be/Nomenclature/Standards/227g09-en.pdf
@@ -219,7 +220,7 @@ id,name,section,provisional,country,url,image,pdf
 230,TIBETAN MASTIFF,Molossian type,,Tibet (China),http://www.fci.be/en/nomenclature/TIBETAN-MASTIFF-230.html,,http://www.fci.be/Nomenclature/Standards/230g02-en.pdf
 231,TIBETAN SPANIEL,Tibetan breeds,,Tibet (China),http://www.fci.be/en/nomenclature/TIBETAN-SPANIEL-231.html,http://www.fci.be/Nomenclature/Illustrations/231g09.jpg,http://www.fci.be/Nomenclature/Standards/231g09-en.pdf
 232,DEUTSCH STICHELHAAR,Continental Pointing Dogs,,GERMANY,http://www.fci.be/en/nomenclature/DEUTSCH-STICHELHAAR-232.html,http://www.fci.be/Nomenclature/Illustrations/232g07.jpg,http://www.fci.be/Nomenclature/Standards/232g07-en.pdf
-233,LITTLE LION DOG,Bichons and related breeds,,FRANCE,http://www.fci.be/en/nomenclature/LITTLE-LION-DOG-233.html,http://www.fci.be/Nomenclature/Illustrations/233g09.jpg,
+233,LITTLE LION DOG,Bichons and related breeds,,FRANCE,http://www.fci.be/en/nomenclature/LITTLE-LION-DOG-233.html,http://www.fci.be/Nomenclature/Illustrations/233g09.jpg,http://www.fci.be/Nomenclature/Standards/233g09-en.pdf
 234,XOLOITZCUINTLE,Primitive type,,MEXICO,http://www.fci.be/en/nomenclature/XOLOITZCUINTLE-234.html,http://www.fci.be/Nomenclature/Illustrations/234g05-1.jpg,http://www.fci.be/Nomenclature/Standards/234g05-en.pdf
 235,GREAT DANE,Molossian type,,GERMANY,http://www.fci.be/en/nomenclature/GREAT-DANE-235.html,http://www.fci.be/Nomenclature/Illustrations/235g02.jpg,http://www.fci.be/Nomenclature/Standards/235g02-en.pdf
 236,AUSTRALIAN SILKY TERRIER,Toy Terriers,,AUSTRALIA,http://www.fci.be/en/nomenclature/AUSTRALIAN-SILKY-TERRIER-236.html,http://www.fci.be/Nomenclature/Illustrations/236g03.jpg,http://www.fci.be/Nomenclature/Standards/236g03-en.pdf
@@ -236,7 +237,7 @@ id,name,section,provisional,country,url,image,pdf
 247,ATLAS MOUNTAIN DOG (AIDI),Molossian type,,MOROCCO,http://www.fci.be/en/nomenclature/ATLAS-MOUNTAIN-DOG-AIDI-247.html,,http://www.fci.be/Nomenclature/Standards/247g02-en.pdf
 248,PHARAOH HOUND,Primitive type,,MALTA,http://www.fci.be/en/nomenclature/PHARAOH-HOUND-248.html,,http://www.fci.be/Nomenclature/Standards/248g05-en.pdf
 249,MAJORCA MASTIFF,Molossian type,,SPAIN,http://www.fci.be/en/nomenclature/MAJORCA-MASTIFF-249.html,,http://www.fci.be/Nomenclature/Standards/249g02-en.pdf
-250,HAVANESE,Bichons and related breeds,,WESTERN MEDITERRANEAN BASIN,http://www.fci.be/en/nomenclature/HAVANESE-250.html,,http://www.fci.be/Nomenclature/Standards/250g09-en.pdf
+250,HAVANESE,Bichons and related breeds,,CUBA,http://www.fci.be/en/nomenclature/HAVANESE-250.html,,http://www.fci.be/Nomenclature/Standards/250g09-en.pdf
 251,POLISH LOWLAND SHEEPDOG,Sheepdogs,,POLAND,http://www.fci.be/en/nomenclature/POLISH-LOWLAND-SHEEPDOG-251.html,http://www.fci.be/Nomenclature/Illustrations/251g01.jpg,http://www.fci.be/Nomenclature/Standards/251g01-en.pdf
 252,TATRA SHEPHERD DOG,Sheepdogs,,POLAND,http://www.fci.be/en/nomenclature/TATRA-SHEPHERD-DOG-252.html,http://www.fci.be/Nomenclature/Illustrations/252g01.jpg,http://www.fci.be/Nomenclature/Standards/252g01-en.pdf
 253,PUG,Small Molossian type Dogs,,CHINA,http://www.fci.be/en/nomenclature/PUG-253.html,http://www.fci.be/Nomenclature/Illustrations/253g09.jpg,http://www.fci.be/Nomenclature/Standards/253g09-en.pdf
@@ -280,7 +281,7 @@ id,name,section,provisional,country,url,image,pdf
 295,HARRIER,Scent hounds,,GREAT BRITAIN,http://www.fci.be/en/nomenclature/HARRIER-295.html,,http://www.fci.be/Nomenclature/Standards/295g06-en.pdf
 296,COLLIE SMOOTH,Sheepdogs,,GREAT BRITAIN,http://www.fci.be/en/nomenclature/COLLIE-SMOOTH-296.html,http://www.fci.be/Nomenclature/Illustrations/296g01.jpg,http://www.fci.be/Nomenclature/Standards/296g01-en.pdf
 297,BORDER COLLIE,Sheepdogs,,GREAT BRITAIN,http://www.fci.be/en/nomenclature/BORDER-COLLIE-297.html,http://www.fci.be/Nomenclature/Illustrations/297g01.jpg,http://www.fci.be/Nomenclature/Standards/297g01-en.pdf
-298,ROMAGNA WATER DOG,Water Dogs,,ITALY,http://www.fci.be/en/nomenclature/ROMAGNA-WATER-DOG-298.html,http://www.fci.be/Nomenclature/Illustrations/298g08-01.jpg,http://www.fci.be/Nomenclature/Standards/298g08-en.pdf
+298,ROMAGNA WATER DOG,Water Dogs,,ITALY,http://www.fci.be/en/nomenclature/ROMAGNA-WATER-DOG-298.html,http://www.fci.be/Nomenclature/Illustrations/298g08-1.jpg,http://www.fci.be/Nomenclature/Standards/298g08-en.pdf
 299,GERMAN HOUND,Scent hounds,,GERMANY,http://www.fci.be/en/nomenclature/GERMAN-HOUND-299.html,,http://www.fci.be/Nomenclature/Standards/299g06-en.pdf
 300,BLACK AND TAN COONHOUND,Scent hounds,,UNITED STATES OF AMERICA,http://www.fci.be/en/nomenclature/BLACK-AND-TAN-COONHOUND-300.html,http://www.fci.be/Nomenclature/Illustrations/300g06.jpg,http://www.fci.be/Nomenclature/Standards/300g06-en.pdf
 301,AMERICAN WATER SPANIEL,Water Dogs,,UNITED STATES OF AMERICA,http://www.fci.be/en/nomenclature/AMERICAN-WATER-SPANIEL-301.html,,http://www.fci.be/Nomenclature/Standards/301g08-en.pdf
@@ -289,11 +290,11 @@ id,name,section,provisional,country,url,image,pdf
 304,RUSSIAN-EUROPEAN LAIKA,Nordic Hunting Dogs,,RUSSIA,http://www.fci.be/en/nomenclature/RUSSIAN-EUROPEAN-LAIKA-304.html,,http://www.fci.be/Nomenclature/Standards/304g05-en.pdf
 305,EAST SIBERIAN LAIKA,Nordic Hunting Dogs,,RUSSIA,http://www.fci.be/en/nomenclature/EAST-SIBERIAN-LAIKA-305.html,http://www.fci.be/Nomenclature/Illustrations/305g05-1.jpg,http://www.fci.be/Nomenclature/Standards/305g05-en.pdf
 306,WEST SIBERIAN LAIKA,Nordic Hunting Dogs,,RUSSIA,http://www.fci.be/en/nomenclature/WEST-SIBERIAN-LAIKA-306.html,,http://www.fci.be/Nomenclature/Standards/306g05-en.pdf
-307,AZAWAKH,Short-haired Sighthounds,,MALI,http://www.fci.be/en/nomenclature/AZAWAKH-307.html,,http://www.fci.be/Nomenclature/Standards/307g10-en.pdf
+307,AZAWAKH,Short-haired Sighthounds,,MALI,http://www.fci.be/en/nomenclature/AZAWAKH-307.html,http://www.fci.be/Nomenclature/Illustrations/307g10-1.jpg,http://www.fci.be/Nomenclature/Standards/307g10-en.pdf
 308,DUTCH SMOUSHOND,Pinscher and Schnauzer type,,THE NETHERLANDS,http://www.fci.be/en/nomenclature/DUTCH-SMOUSHOND-308.html,,http://www.fci.be/Nomenclature/Standards/308g02-en.pdf
 309,SHAR PEI,Molossian type,,CHINA,http://www.fci.be/en/nomenclature/SHAR-PEI-309.html,,http://www.fci.be/Nomenclature/Standards/309g02-en.pdf
 310,PERUVIAN HAIRLESS DOG,Primitive type,,PERU,http://www.fci.be/en/nomenclature/PERUVIAN-HAIRLESS-DOG-310.html,http://www.fci.be/Nomenclature/Illustrations/310g05.jpg,http://www.fci.be/Nomenclature/Standards/310g05-en.pdf
-311,SAARLOOS WOLFHOND,Sheepdogs,,THE NETHERLANDS,http://www.fci.be/en/nomenclature/SAARLOOS-WOLFHOND-311.html,,http://www.fci.be/Nomenclature/Standards/311g01-en.pdf
+311,SAARLOOS WOLFHOND,Sheepdogs,,THE NETHERLANDS,http://www.fci.be/en/nomenclature/SAARLOOS-WOLFHOND-311.html,http://www.fci.be/Nomenclature/Illustrations/311g01-1.jpg,http://www.fci.be/Nomenclature/Standards/311g01-en.pdf
 312,NOVA SCOTIA DUCK TOLLING RETRIEVER,Retrievers,,CANADA,http://www.fci.be/en/nomenclature/NOVA-SCOTIA-DUCK-TOLLING-RETRIEVER-312.html,,http://www.fci.be/Nomenclature/Standards/312g08-en.pdf
 313,DUTCH SCHAPENDOES,Sheepdogs,,THE NETHERLANDS,http://www.fci.be/en/nomenclature/DUTCH-SCHAPENDOES-313.html,http://www.fci.be/Nomenclature/Illustrations/313g01.jpg,http://www.fci.be/Nomenclature/Standards/313g01-en.pdf
 314,NEDERLANDSE KOOIKERHONDJE,Flushing Dogs,,THE NETHERLANDS,http://www.fci.be/en/nomenclature/NEDERLANDSE-KOOIKERHONDJE-314.html,http://www.fci.be/Nomenclature/Illustrations/314g08-1.jpg,http://www.fci.be/Nomenclature/Standards/314g08-en.pdf
@@ -313,7 +314,7 @@ id,name,section,provisional,country,url,image,pdf
 328,CAUCASIAN SHEPHERD DOG,Molossian type,,RUSSIA,http://www.fci.be/en/nomenclature/CAUCASIAN-SHEPHERD-DOG-328.html,http://www.fci.be/Nomenclature/Illustrations/328g02.jpg,http://www.fci.be/Nomenclature/Standards/328g02-en.pdf
 329,CANARIAN WARREN HOUND,Primitive type - Hunting Dogs,,SPAIN,http://www.fci.be/en/nomenclature/CANARIAN-WARREN-HOUND-329.html,http://www.fci.be/Nomenclature/Illustrations/329g05.jpg,http://www.fci.be/Nomenclature/Standards/329g05-en.pdf
 330,IRISH RED AND WHITE SETTER,British and Irish Pointers and Setters,,IRELAND,http://www.fci.be/en/nomenclature/IRISH-RED-AND-WHITE-SETTER-330.html,,http://www.fci.be/Nomenclature/Standards/330g07-en.pdf
-331,ANATOLIAN SHEPHERD DOG,Molossian type,,ANATOLIA,http://www.fci.be/en/nomenclature/ANATOLIAN-SHEPHERD-DOG-331.html,http://www.fci.be/Nomenclature/Illustrations/331g02.jpg,http://www.fci.be/Nomenclature/Standards/331g02-en.pdf
+331,KANGAL SHEPHERD DOG,Molossian type,,TURKEY,http://www.fci.be/en/nomenclature/KANGAL-SHEPHERD-DOG-331.html,http://www.fci.be/Nomenclature/Illustrations/331g02.jpg,http://www.fci.be/Nomenclature/Standards/331g02-en.pdf
 332,CZECHOSLOVAKIAN WOLFDOG,Sheepdogs,,SLOVAKIA,http://www.fci.be/en/nomenclature/CZECHOSLOVAKIAN-WOLFDOG-332.html,,http://www.fci.be/Nomenclature/Standards/332g01-en.pdf
 333,POLISH GREYHOUND,Short-haired Sighthounds,,POLAND,http://www.fci.be/en/nomenclature/POLISH-GREYHOUND-333.html,,http://www.fci.be/Nomenclature/Standards/333g10-en.pdf
 334,KOREA JINDO DOG,Asian Spitz and related breeds,,REPUBLIC OF KOREA,http://www.fci.be/en/nomenclature/KOREA-JINDO-DOG-334.html,http://www.fci.be/Nomenclature/Illustrations/334g05.jpg,http://www.fci.be/Nomenclature/Standards/334g05-en.pdf
@@ -325,7 +326,7 @@ id,name,section,provisional,country,url,image,pdf
 340,SAINT MIGUEL CATTLE DOG,Molossian type,,PORTUGAL,http://www.fci.be/en/nomenclature/SAINT-MIGUEL-CATTLE-DOG-340.html,,http://www.fci.be/Nomenclature/Standards/340g02-en.pdf
 341,BRAZILIAN TERRIER,Large and medium sized Terriers,,BRAZIL,http://www.fci.be/en/nomenclature/BRAZILIAN-TERRIER-341.html,http://www.fci.be/Nomenclature/Illustrations/341g03.jpg,http://www.fci.be/Nomenclature/Standards/341g03-en.pdf
 342,AUSTRALIAN SHEPHERD,Sheepdogs,,UNITED STATES OF AMERICA,http://www.fci.be/en/nomenclature/AUSTRALIAN-SHEPHERD-342.html,,http://www.fci.be/Nomenclature/Standards/342g01-en.pdf
-343,ITALIAN CORSO DOG,Molossian type,,ITALY,http://www.fci.be/en/nomenclature/ITALIAN-CORSO-DOG-343.html,http://www.fci.be/Nomenclature/Illustrations/343g02.jpg,http://www.fci.be/Nomenclature/Standards/343g02-en.pdf
+343,ITALIAN CANE CORSO,Molossian type,,ITALY,http://www.fci.be/en/nomenclature/ITALIAN-CANE-CORSO-343.html,http://www.fci.be/Nomenclature/Illustrations/343g02.jpg,http://www.fci.be/Nomenclature/Standards/343g02-en.pdf
 344,AMERICAN AKITA,Asian Spitz and related breeds,,JAPAN,http://www.fci.be/en/nomenclature/AMERICAN-AKITA-344.html,,http://www.fci.be/Nomenclature/Standards/344g05-en.pdf
 345,JACK RUSSELL TERRIER,Small sized Terriers,,GREAT BRITAIN,http://www.fci.be/en/nomenclature/JACK-RUSSELL-TERRIER-345.html,http://www.fci.be/Nomenclature/Illustrations/345g03-2.jpg,http://www.fci.be/Nomenclature/Standards/345g03-en.pdf
 346,DOGO CANARIO,Molossian type,,SPAIN,http://www.fci.be/en/nomenclature/DOGO-CANARIO-346.html,,http://www.fci.be/Nomenclature/Standards/346g02-en.pdf
@@ -334,12 +335,13 @@ id,name,section,provisional,country,url,image,pdf
 349,ROMANIAN MIORITIC SHEPHERD DOG,Sheepdogs,,ROMANIA,http://www.fci.be/en/nomenclature/ROMANIAN-MIORITIC-SHEPHERD-DOG-349.html,,http://www.fci.be/Nomenclature/Standards/349g01-en.pdf
 350,ROMANIAN CARPATHIAN SHEPHERD DOG,Sheepdogs,,ROMANIA,http://www.fci.be/en/nomenclature/ROMANIAN-CARPATHIAN-SHEPHERD-DOG-350.html,http://www.fci.be/Nomenclature/Illustrations/350g01.jpg,http://www.fci.be/Nomenclature/Standards/350g01-en.pdf
 351,AUSTRALIAN STUMPY TAIL CATTLE DOG,Cattledogs (except Swiss Cattledogs),7/6/2005,AUSTRALIA,http://www.fci.be/en/nomenclature/AUSTRALIAN-STUMPY-TAIL-CATTLE-DOG-351.html,,http://www.fci.be/Nomenclature/Standards/351g01-en.pdf
-352,RUSSIAN TOY,Continental Toy Spaniel and Russian Toy,2/21/2006,RUSSIA,http://www.fci.be/en/nomenclature/RUSSIAN-TOY-352.html,http://www.fci.be/Nomenclature/Illustrations/352g09-1.jpg,http://www.fci.be/Nomenclature/Standards/352g09-en.pdf
-353,CIMARRÓN URUGUAYO,Molossian type,2/21/2006,URUGUAY,http://www.fci.be/en/nomenclature/CIMARRON-URUGUAYO-353.html,,http://www.fci.be/Nomenclature/Standards/353g02-en.pdf
-354,POLISH HUNTING DOG,Scent hounds,11/10/2006,POLAND,http://www.fci.be/en/nomenclature/POLISH-HUNTING-DOG-354.html,,http://www.fci.be/Nomenclature/Standards/354g06-en.pdf
-355,BOSNIAN AND HERZEGOVINIAN - CROATIAN SHEPHERD DOG,Molossian type,6/1/2007,"BOSNIA AND HERZEGOVINA, CROATIA",http://www.fci.be/en/nomenclature/BOSNIAN-AND-HERZEGOVINIAN-CROATIAN-SHEPHERD-DOG-355.html,,http://www.fci.be/Nomenclature/Standards/355g02-en.pdf
+352,RUSSIAN TOY,Continental Toy Spaniel and Russian Toy,,RUSSIA,http://www.fci.be/en/nomenclature/RUSSIAN-TOY-352.html,http://www.fci.be/Nomenclature/Illustrations/352g09-1.jpg,http://www.fci.be/Nomenclature/Standards/352g09-en.pdf
+353,CIMARRÓN URUGUAYO,Molossian type,,URUGUAY,http://www.fci.be/en/nomenclature/CIMARRON-URUGUAYO-353.html,,http://www.fci.be/Nomenclature/Standards/353g02-en.pdf
+354,POLISH HUNTING DOG,Scent hounds,,POLAND,http://www.fci.be/en/nomenclature/POLISH-HUNTING-DOG-354.html,,http://www.fci.be/Nomenclature/Standards/354g06-en.pdf
+355,BOSNIAN AND HERZEGOVINIAN - CROATIAN SHEPHERD DOG,Molossian type,,"BOSNIA AND HERZEGOVINA, CROATIA",http://www.fci.be/en/nomenclature/BOSNIAN-AND-HERZEGOVINIAN-CROATIAN-SHEPHERD-DOG-355.html,,http://www.fci.be/Nomenclature/Standards/355g02-en.pdf
 356,DANISH-SWEDISH FARMDOG,Pinscher and Schnauzer type,7/5/2008,"DENMARK, SWEDEN",http://www.fci.be/en/nomenclature/DANISH-SWEDISH-FARMDOG-356.html,http://www.fci.be/Nomenclature/Illustrations/356g02.jpg,http://www.fci.be/Nomenclature/Standards/356g02-en.pdf
-357,SOUTHEASTERN EUROPEAN SHEPHERD,Molossian type,3/26/2009,SOUTH-EASTERN EUROPE,http://www.fci.be/en/nomenclature/SOUTHEASTERN-EUROPEAN-SHEPHERD-357.html,http://www.fci.be/Nomenclature/Illustrations/357g02.jpg,http://www.fci.be/Nomenclature/Standards/357g02-en.pdf
+357,ROMANIAN BUCOVINA SHEPHERD,Molossian type,3/26/2009,ROMANIA,http://www.fci.be/en/nomenclature/ROMANIAN-BUCOVINA-SHEPHERD-357.html,http://www.fci.be/Nomenclature/Illustrations/357g02.jpg,http://www.fci.be/Nomenclature/Standards/357g02-en.pdf
 358,THAI BANGKAEW DOG,Asian Spitz and related breeds,4/14/2011,THAILAND,http://www.fci.be/en/nomenclature/THAI-BANGKAEW-DOG-358.html,http://www.fci.be/Nomenclature/Illustrations/358g05.jpg,http://www.fci.be/Nomenclature/Standards/358g05-en.pdf
 359,MINIATURE BULL TERRIER,Bull type Terriers,,GREAT BRITAIN,http://www.fci.be/en/nomenclature/MINIATURE-BULL-TERRIER-359.html,http://www.fci.be/Nomenclature/Illustrations/359g03.jpg,http://www.fci.be/Nomenclature/Standards/359g03-en.pdf
 360,LANCASHIRE HEELER,Sheepdogs,5/1/2016,ENGLAND,http://www.fci.be/en/nomenclature/LANCASHIRE-HEELER-360.html,http://www.fci.be/Nomenclature/Illustrations/360g01.jpg,http://www.fci.be/Nomenclature/Standards/360g01-en.pdf
+361,SEGUGIO MAREMMANO,Scent hounds,3/1/2018,ITALY,http://www.fci.be/en/nomenclature/SEGUGIO-MAREMMANO-361.html,http://www.fci.be/Nomenclature/Illustrations/361g06-1.jpg,http://www.fci.be/Nomenclature/Standards/361g06-en.pdf
