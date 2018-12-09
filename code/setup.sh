@@ -1,6 +1,5 @@
 #!/bin/sh
 
-virtualenv -p python2.7 .env
+python3 -m venv .venv/fci
 . activate
 pip install -r requirements.txt
-

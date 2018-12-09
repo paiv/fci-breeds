@@ -1,3 +1,2 @@
 
-. .env/bin/activate
-
+. .venv/fci/bin/activate
