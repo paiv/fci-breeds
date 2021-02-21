@@ -39,16 +39,18 @@ class FciParser(core.Parser):
             if el:
                 return el.strip()
 
-        def url(xpath):
-            el = (body.xpath(xpath) or [None])[0]
-            if el:
-                return urljoin(page['url'], el)
+        def url(xpath, skip=None):
+            for el in body.xpath(xpath):
+                s = el.strip()
+                if not (skip and skip(s)):
+                    return urljoin(page['url'], s)
 
         item['name'] = text('//span[@id="ContentPlaceHolder1_NomEnLabel"]/text()')
         item['section'] = text('//span[@id="ContentPlaceHolder1_SectionLabel"]/text()')
         item['country'] = text('//span[@id="ContentPlaceHolder1_PaysOrigineLabel"]/text()')
 
-        imgUrl = url('//img[@id="ContentPlaceHolder1_IllustrationsRepeater_Image1_0"]/@src')
+        def stdana(s): return s.startswith('/Nomenclature/Illustrations/STD-ANA-')
+        imgUrl = url('//img[@id="ContentPlaceHolder1_IllustrationsRepeater_Image1_0"]/@src', stdana)
         if imgUrl: item['thumb'] = imgUrl
 
         pdfUrl = url('//a[@id="ContentPlaceHolder1_StandardENHyperLink"]/@href')

@@ -22,8 +22,6 @@ def export_from(datadir, tofile):
     writer.writeheader()
 
     for entry in data:
-        # for n in ['name', 'section', 'country']:
-        #   entry[n] = unicode(entry[n]).encode('utf-8')
         entry['id'] = entry['refid']
         entry.pop('refid')
         entry['image'] = None

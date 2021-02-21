@@ -12,10 +12,6 @@ from lxml import html
 from urllib.parse import urlsplit, urlunsplit
 
 
-def jsonpp(obj):
-    return json.dumps(obj, sort_keys=True, indent=2, separators=[',', ': '])
-
-
 def jsondump(obj, fn):
     sj = json.dumps(obj, ensure_ascii=False, sort_keys=True, indent=2, separators=[',', ': '])
     if not os.path.isdir(os.path.dirname(fn)):
@@ -26,14 +22,14 @@ def jsondump(obj, fn):
 
 
 class Crawler:
-    def __init__(self, name, dir, url, parser, dumper, delay=0.01, userAgent=None):
+    def __init__(self, name, dir, url, parser, dumper, delay=0.01, user_agent=None):
         self.name = name or os.path.basename(dir)
         self.dumpDir = dir
         self.rootUrl = url
         self.parser = parser
         self.dumper = dumper
         self.delay = delay
-        self.userAgent = userAgent
+        self.user_agent = user_agent
         self.fringe = [self.rootUrl]
         self.visited = set()
         self.state = CrawlerState(fileName= '-'.join([self.name, 'crawler-state.json']))
@@ -65,7 +61,7 @@ class Crawler:
                     self.dumper.dump(item, self)
 
             else:
-                print('%d %s' % (r.status_code, url), file=sys.stdout)
+                print('%d %s' % (r.status_code, url), file=sys.stderr)
 
             self.visited.add(url)
             self.state.save(self)
@@ -81,10 +77,10 @@ class Crawler:
         time.sleep(self.delay)
 
         headers = {}
-        if self.userAgent:
-            headers['User-Agent'] = self.userAgent
+        if self.user_agent:
+            headers['User-Agent'] = self.user_agent
 
-        print(url)
+        print(url, file=sys.stderr)
         return self.req.get(url, headers=headers)
 
     def download(self, url, fn):
