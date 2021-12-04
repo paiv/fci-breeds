@@ -5,20 +5,19 @@ author: paiv, https://github.com/paiv/
 
 import csv
 import json
-import os
+from pathlib import Path
 
 
 def export_from(datadir, tofile):
     data = []
-    for (root,dirs,files) in os.walk(datadir):
-        for fn in [os.path.join(root,x) for x in files if x == 'entry.json']:
-            with open(fn, 'r') as fd:
-                entry = json.load(fd)
-                data.append(entry)
+    for fn in Path(datadir).glob('**/entry.json'):
+        with open(fn, 'r') as fp:
+            entry = json.load(fp)
+            data.append(entry)
 
     data = sorted(data, key=lambda x: int(x['refid']))
 
-    writer = csv.DictWriter(tofile, ['id','name','section','provisional','country','url','image','pdf'])
+    writer = csv.DictWriter(tofile, ['id','name','group','section','provisional','country','url','image','pdf'])
     writer.writeheader()
 
     for entry in data:

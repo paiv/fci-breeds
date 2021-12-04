@@ -4,26 +4,25 @@ author: paiv, https://github.com/paiv/
 """
 
 import json
-import os
 import requests
 import sys
 import time
 from lxml import html
+from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
 
 def jsondump(obj, fn):
-    sj = json.dumps(obj, ensure_ascii=False, sort_keys=True, indent=2, separators=[',', ': '])
-    if not os.path.isdir(os.path.dirname(fn)):
-        os.makedirs(os.path.dirname(fn))
+    if not fn.parent.is_dir():
+        fn.parent.mkdir(parents=True)
     with open(fn, 'w') as fp:
-        fp.write(sj)
+        json.dump(obj, fp, ensure_ascii=False, sort_keys=True, indent=2, separators=[',', ': '])
     return fn
 
 
 class Crawler:
     def __init__(self, name, dir, url, parser, dumper, delay=0.01, user_agent=None):
-        self.name = name or os.path.basename(dir)
+        self.name = name or dir.name
         self.dumpDir = dir
         self.rootUrl = url
         self.parser = parser
@@ -99,7 +98,7 @@ class CrawlerState:
         self.fileName = fileName
 
     def save(self, crawler):
-        fn = os.path.join(crawler.dumpDir, self.fileName)
+        fn = crawler.dumpDir / self.fileName
         state = {
             'rootUrl': crawler.rootUrl,
             'fringe': crawler.fringe,
@@ -108,8 +107,8 @@ class CrawlerState:
         jsondump(state, fn)
 
     def restore(self, crawler):
-        fn = os.path.join(crawler.dumpDir, self.fileName)
-        if os.path.isfile(fn):
+        fn = crawler.dumpDir / self.fileName
+        if fn.is_file():
             with open(fn, 'r') as fp:
                 state = json.load(fp)
             crawler.rootUrl = state['rootUrl']
@@ -120,14 +119,14 @@ class CrawlerState:
         crawler.fringe = [crawler.rootUrl]
         crawler.visited = set()
 
-        fn = os.path.join(crawler.dumpDir, self.fileName)
-        if os.path.isfile(fn):
-            os.remove(fn)
+        fn = crawler.dumpDir / self.fileName
+        if fn.is_file():
+            fn.unlink()
 
 
 class Dumper:
     def __init__(self, dir):
-        self.dumpDir = dir
+        self.dumpDir = Path(dir)
 
     def exists(self, item):
         return False
