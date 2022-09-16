@@ -11,7 +11,8 @@ from urllib.parse import urlsplit, urlunsplit, urljoin
 
 
 class FciParser(core.Parser):
-    def __init__(self):
+    def __init__(self, language='en'):
+        self.language = language
         self.rxfciid = re.compile(r'\((\d+)\)')
 
     def getcontent(self, request):
@@ -31,10 +32,12 @@ class FciParser(core.Parser):
         return {'refid':refid, 'url':url}
 
     def parse(self, item, page):
+        lang = self.language.upper()
         body = page['body']
+        exslt = {'re': 'http://exslt.org/regular-expressions'}
 
         def text(xpath):
-            el = ' '.join([s.strip() for s in body.xpath(xpath)])
+            el = ' '.join([s.strip() for s in body.xpath(xpath, namespaces=exslt)])
             if el:
                 return el.strip()
 
@@ -45,12 +48,12 @@ class FciParser(core.Parser):
                 return text.split('(')[0].strip()
 
         def url(xpath, skip=None):
-            for el in body.xpath(xpath):
+            for el in body.xpath(xpath, namespaces=exslt):
                 s = el.strip()
                 if not (skip and skip(s)):
                     return urljoin(page['url'], s)
 
-        item['name'] = text('//span[@id="ContentPlaceHolder1_NomEnLabel"]/text()')
+        item['name'] = text(f'//span[re:match(@id,"ContentPlaceHolder1_Nom{lang}Label","i")]/text()')
         item['group'] = clean_group(text('//a[@id="ContentPlaceHolder1_GroupeHyperLink"]//text()'))
         item['section'] = text('//span[@id="ContentPlaceHolder1_SectionLabel"]/text()')
         item['country'] = text('//span[@id="ContentPlaceHolder1_PaysOrigineLabel"]/text()')
@@ -59,7 +62,7 @@ class FciParser(core.Parser):
         imgUrl = url('//img[@id="ContentPlaceHolder1_IllustrationsRepeater_Image1_0"]/@src', stdana)
         if imgUrl: item['thumb'] = imgUrl
 
-        pdfUrl = url('//a[@id="ContentPlaceHolder1_StandardENHyperLink"]/@href')
+        pdfUrl = url(f'//a[re:match(@id,"ContentPlaceHolder1_Standard{lang}HyperLink","i")]/@href')
         if pdfUrl: item['pdf'] = pdfUrl
 
         provDate = text('//span[@id="ContentPlaceHolder1_DateReconnaissanceProvisoireLabel"]/text()')
@@ -100,10 +103,10 @@ class FciDumper(core.Dumper):
             fn.unlink()
 
 class FciCrawler:
-    def __init__(self, basedir):
+    def __init__(self, basedir, language):
         todir = Path(basedir) / 'fci'
-        self.craw = core.Crawler(name='fci', dir=todir, url='http://www.fci.be/en/nomenclature/',
-            parser=FciParser(), dumper=FciDumper(todir))
+        self.craw = core.Crawler(name='fci', dir=todir, url=f'https://www.fci.be/{language}/nomenclature/',
+            parser=FciParser(language=language), dumper=FciDumper(todir))
 
     def crawl(self):
         return self.craw.crawl()
@@ -117,10 +120,11 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--reset', action='store_true', help='Reset data')
-    parser.add_argument('--data-dir', default='data', help='Data directory')
+    parser.add_argument('-o', '--data-dir', default='data', help='Data directory')
+    parser.add_argument('-l', '--language', default='en', help='Language identifier, en|fr|de|es')
     args = parser.parse_args()
 
-    craw = FciCrawler(basedir=args.data_dir)
+    craw = FciCrawler(basedir=args.data_dir, language=args.language)
     if args.reset:
         craw.reset()
     craw.crawl()

@@ -36,7 +36,7 @@ if __name__ == '__main__':
     import sys
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data-dir', default='data', help='Data directory')
+    parser.add_argument('-i', '--data-dir', default='data', help='Data directory')
     parser.add_argument('outfile', nargs='?', default=sys.stdout, type=argparse.FileType('w'))
     args = parser.parse_args()
 

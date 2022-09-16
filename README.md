@@ -5,4 +5,4 @@
 Full list: [fci-breeds.csv](fci-breeds.csv)
 
 Data compiled from
-http://www.fci.be/en/nomenclature/
+https://www.fci.be/en/nomenclature/
