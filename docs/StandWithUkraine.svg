@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="20">
+<title>#StandWithUkraine</title>
+<defs>
+  <linearGradient id="bg-fill" x1="50%" y1="0%" x2="50%" y2="100%">
+    <stop stop-color="#444D56" offset="0%"></stop>
+    <stop stop-color="#24292E" offset="100%"></stop>
+  </linearGradient>
+  <linearGradient id="ua-fill" x1="50%" y1="0%" x2="50%" y2="100%">
+    <stop stop-color="#0057B7" offset="0%"></stop>
+    <stop stop-color="#0057B7" offset="50%"></stop>
+    <stop stop-color="#FFD700" offset="50%"></stop>
+    <stop stop-color="#FFD700" offset="100%"></stop>
+  </linearGradient>
+</defs>
+<g fill="none" fill-rule="evenodd">
+  <g font-family="&#39;DejaVu Sans&#39;,Verdana,Geneva,sans-serif" font-size="11">
+    <path d="M0,3 C0,1.3431 1.3552,0 3.02702703,0 L114,0 L114,20 L3.02702703,20 C1.3552,20 0,18.6569 0,17 L0,3 Z" fill="url(#bg-fill)" fill-rule="nonzero"></path>
+    <text fill="#010101" fill-opacity=".3">
+      <tspan x="2.1981982" y="15" aria-hidden="true">#StandWithUkraine</tspan>
+    </text>
+    <text fill="#FFFFFF">
+      <tspan x="2.1981982" y="14">#StandWithUkraine</tspan>
+    </text>
+  </g>
+  <g transform="translate(114)">
+    <path d="M0 0h27.47C28.869 0 30 1.343 30 3v14c0 1.657-1.132 3-2.53 3H0V0z" fill="url(#ua-fill)" fill-rule="nonzero"></path>
+  </g>
+</g>
+</svg>
