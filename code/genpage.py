@@ -106,7 +106,7 @@ def main(args):
 <p><a href="https://ukrainewar.carrd.co/"><img src="StandWithUkraine.svg" alt="standwithukraine"></a></p>
 <p>Data compiled from <a href="https://www.fci.be/en/nomenclature/">https://www.fci.be/en/nomenclature/</a>.</p>
 <p>Generated on &{timestamp}</p>
-<p>Download: <a href="https://github.com/paiv/fci-breeds/releases/latest/download/fci-breeds.csv.tar.gz">CSV</a></p>
+<p>Download: <a href="https://github.com/paiv/fci-breeds/releases/latest/download/fci-breeds.tar.gz">CSV</a></p>
 </div>
 <div class="table">
 <div>
