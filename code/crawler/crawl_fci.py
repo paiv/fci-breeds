@@ -67,7 +67,7 @@ class FciParser(core.Parser):
 
         provDate = text('//span[@id="ContentPlaceHolder1_DateReconnaissanceProvisoireLabel"]/text()')
         status = text('//span[@id="ContentPlaceHolder1_StatutLabel"]/text()')
-        if 'provisional' in status and provDate: item['provisional'] = provDate
+        if 'provis' in status.lower() and provDate: item['provisional'] = provDate
 
         return item
 

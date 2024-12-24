@@ -32,19 +32,10 @@ def gen_(row, name):
 
 
 def main(args):
-    filename = args.file if (args.file is not None) else '-'
-    if filename == '-':
-        fin = sys.stdin
-    else:
-        fin = Path(filename).open('r')
-
+    fin = args.file
+    fout = args.output or sys.stdout
+    lang = args.lang or 'en'
     reader = csv.DictReader(fin)
-
-    fileto = args.output if (args.output is not None) else '-'
-    if fileto == '-':
-        fout = sys.stdout
-    else:
-        fout = Path(fileto).open('w')
 
     gens = dict(id=gen_id, url=gen_link, image=gen_link, pdf=gen_link)
     
@@ -62,13 +53,15 @@ def main(args):
 
     context = dict()
     context['timestamp'] = datetime.now(UTC).date().isoformat()
+    context['lang'] = lang
     context['ncols'] = len(fieldnames)
     context['fieldnames'] = map(gen_th, fieldnames)
     context['entries'] = entries()
+    context['archive'] = 'fci-breeds.tar.gz'
 
     tpl = '''\
 <!DOCTYPE html>
-<html lang="en">
+<html lang="&lang">
 <head>
   <meta charset="utf8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -78,6 +71,8 @@ def main(args):
 @media (prefers-color-scheme: dark) {
 :root { --hi: #433; }
 }
+.h1 h1 { display: inline; margin-right: 1rem; }
+.h1 a { font-size: x-large; }
 .table {
   display: grid;
   gap: 0;
@@ -101,12 +96,18 @@ def main(args):
 </style>
 </head>
 <body>
-<div class="info">
+<div class="info" lang="en">
+<div class="h1">
 <h1>FCI Breeds</h1>
+<a href=".">en</a>
+| <a href="index-fr.html">fr</a>
+| <a href="index-de.html">de</a>
+| <a href="index-es.html">es</a>
+</div>
 <p><a href="https://ukrainewar.carrd.co/"><img src="StandWithUkraine.svg" alt="standwithukraine"></a></p>
-<p>Data compiled from <a href="https://www.fci.be/en/nomenclature/">https://www.fci.be/en/nomenclature/</a>.</p>
+<p>Data compiled from <a href="https://www.fci.be/&lang/nomenclature/">https://www.fci.be/&lang/nomenclature/</a>.</p>
 <p>Generated on &{timestamp}</p>
-<p>Download: <a href="https://github.com/paiv/fci-breeds/releases/latest/download/fci-breeds.tar.gz">CSV</a></p>
+<p>Download: <a href="https://github.com/paiv/fci-breeds/releases/latest/download/&{archive}">CSV</a></p>
 </div>
 <div class="table">
 <div>
@@ -123,7 +124,9 @@ def main(args):
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description='HTML page generator for the fci-breeds.csv')
-    parser.add_argument('file', nargs='?', default='fci-breeds.csv', help='the CSV file to process, default is fci-breeds.csv')
-    parser.add_argument('-o', '--output', help='destination file name')
+    parser.add_argument('file', nargs='?', default='fci-breeds.csv', type=argparse.FileType(),
+        help='the CSV file to process, default is fci-breeds.csv')
+    parser.add_argument('-l', '--lang', help='language code')
+    parser.add_argument('-o', '--output', type=argparse.FileType('w'), help='destination file name')
     args = parser.parse_args()
     main(args)
