@@ -1,2 +1,3 @@
 lxml
 requests
+git+https://github.com/paiv/template-py
