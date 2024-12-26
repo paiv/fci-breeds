@@ -29,7 +29,7 @@ class FciParser(core.Parser):
         url = el.get('href')
         if url:
             url = urljoin(baseurl, url)
-        return {'refid':refid, 'url':url}
+        return {'refid':refid, 'url':url, '_partial':True}
 
     def parse(self, item, page):
         lang = self.language.upper()
@@ -57,6 +57,7 @@ class FciParser(core.Parser):
         item['group'] = clean_group(text('//a[@id="ContentPlaceHolder1_GroupeHyperLink"]//text()'))
         item['section'] = text('//span[@id="ContentPlaceHolder1_SectionLabel"]/text()')
         item['country'] = text('//span[@id="ContentPlaceHolder1_PaysOrigineLabel"]/text()')
+        del item['_partial']
 
         def stdana(s): return s.startswith('/Nomenclature/Illustrations/STD-ANA-')
         imgUrl = url('//img[@id="ContentPlaceHolder1_IllustrationsRepeater_Image1_0"]/@src', stdana)
@@ -102,17 +103,21 @@ class FciDumper(core.Dumper):
         for fn in self.dumpDir.glob('**/entry.json'):
             fn.unlink()
 
+
 class FciCrawler:
-    def __init__(self, basedir, language):
+    def __init__(self, url, basedir, language='en', parser=None, dumper=None):
+        base_url = url or f'https://www.fci.be/{language}/nomenclature/'
         todir = Path(basedir) / 'fci'
-        self.craw = core.Crawler(name='fci', dir=todir, url=f'https://www.fci.be/{language}/nomenclature/',
-            parser=FciParser(language=language), dumper=FciDumper(todir))
+        parser = parser or FciParser(language=language)
+        dumper = dumper or FciDumper(todir)
+        self.engine = core.Crawler(name='fci', dir=todir, url=base_url,
+            parser=parser, dumper=dumper)
 
     def crawl(self):
-        return self.craw.crawl()
+        return self.engine.crawl()
 
     def reset(self):
-        self.craw.reset()
+        self.engine.reset()
 
 
 if __name__ == '__main__':
@@ -124,7 +129,7 @@ if __name__ == '__main__':
     parser.add_argument('-l', '--language', default='en', help='Language identifier, en|fr|de|es')
     args = parser.parse_args()
 
-    craw = FciCrawler(basedir=args.data_dir, language=args.language)
+    craw = FciCrawler(url=None, basedir=args.data_dir, language=args.language)
     if args.reset:
         craw.reset()
     craw.crawl()

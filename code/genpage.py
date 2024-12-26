@@ -35,6 +35,7 @@ def main(args):
     fin = args.file
     fout = args.output or sys.stdout
     lang = args.lang or 'en'
+    base_url = args.url
     reader = csv.DictReader(fin)
 
     gens = dict(id=gen_id, url=gen_link, image=gen_link, pdf=gen_link)
@@ -54,6 +55,7 @@ def main(args):
     context = dict()
     context['timestamp'] = datetime.now(UTC).date().isoformat()
     context['lang'] = lang
+    context['base_url'] = base_url
     context['ncols'] = len(fieldnames)
     context['fieldnames'] = map(gen_th, fieldnames)
     context['entries'] = entries()
@@ -105,7 +107,7 @@ def main(args):
 | <a href="index-es.html">es</a>
 </div>
 <p><a href="https://ukrainewar.carrd.co/"><img src="StandWithUkraine.svg" alt="standwithukraine"></a></p>
-<p>Data compiled from <a href="https://www.fci.be/&lang/nomenclature/">https://www.fci.be/&lang/nomenclature/</a>.</p>
+<p>Data compiled from <a href="&{base_url}">&{base_url}</a>.</p>
 <p>Generated on &{timestamp}</p>
 <p>Download: <a href="https://github.com/paiv/fci-breeds/releases/latest/download/&{archive}">CSV</a></p>
 </div>
@@ -127,6 +129,7 @@ if __name__ == '__main__':
     parser.add_argument('file', nargs='?', default='fci-breeds.csv', type=argparse.FileType(),
         help='the CSV file to process, default is fci-breeds.csv')
     parser.add_argument('-l', '--lang', help='language code')
+    parser.add_argument('--url', default='https://www.fci.be/en/nomenclature/', help='data origin URL')
     parser.add_argument('-o', '--output', type=argparse.FileType('w'), help='destination file name')
     args = parser.parse_args()
     main(args)

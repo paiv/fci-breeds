@@ -7,6 +7,7 @@ import json
 import requests
 import sys
 import time
+import tomllib
 from lxml import html
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
@@ -21,19 +22,29 @@ def jsondump(obj, fn):
 
 
 class Crawler:
-    def __init__(self, name, dir, url, parser, dumper, delay=0.01, user_agent=None):
+    def __init__(self, name, dir, url, parser, dumper, delay=0.01, headers=None):
         self.name = name or dir.name
         self.dumpDir = dir
         self.rootUrl = url
         self.parser = parser
         self.dumper = dumper
         self.delay = delay
-        self.user_agent = user_agent
+        self.headers = self._load_env()
+        if headers:
+            self.headers = (self.headers or dict()) | headers
         self.fringe = [self.rootUrl]
         self.visited = set()
         self.state = CrawlerState(fileName= '-'.join([self.name, 'crawler-state.json']))
         self.state.restore(self)
         self.req = requests.Session()
+
+    def _load_env(self):
+        headers = None
+        if (fn := Path('.env')).is_file():
+            with fn.open('rb') as fp:
+                config = tomllib.load(fp)
+                headers = config.get('crawler', dict()).get('headers')
+        return headers
 
     def crawl(self):
         while self.fringe:
@@ -53,9 +64,10 @@ class Crawler:
                     if self.dumper.exists(item):
                         continue
 
-                    r = self.get(item['url'])
-                    item_page = self.parser.getcontent(r)
-                    item = self.parser.parse(item, item_page)
+                    if item.get('_partial'):
+                        r = self.get(item['url'])
+                        item_page = self.parser.getcontent(r)
+                        item = self.parser.parse(item, item_page)
 
                     self.dumper.dump(item, self)
 
@@ -74,13 +86,8 @@ class Crawler:
 
     def get(self, url):
         time.sleep(self.delay)
-
-        headers = {}
-        if self.user_agent:
-            headers['User-Agent'] = self.user_agent
-
         print(url, file=sys.stderr)
-        return self.req.get(url, headers=headers)
+        return self.req.get(url, headers=self.headers)
 
     def download(self, url, fn):
         if url is None:
