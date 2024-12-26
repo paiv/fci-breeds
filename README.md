@@ -9,4 +9,5 @@
 | fr | [fci-breeds-fr.csv](fci-breeds-fr.csv) | https://www.fci.be/fr/nomenclature/ |
 | de | [fci-breeds-de.csv](fci-breeds-de.csv) | https://www.fci.be/de/nomenclature/ |
 | es | [fci-breeds-es.csv](fci-breeds-es.csv) | https://www.fci.be/es/nomenclature/ |
+| pl | [fci-breeds-pl.csv](fci-breeds-pl.csv) | https://www.zkwp.pl/wzorce.php |
 | uk | [fci-breeds-uk.csv](fci-breeds-uk.csv) | https://uku.com.ua/plem_work/breed_fci/ |
