@@ -105,6 +105,7 @@ def main(args):
 | <a href="index-fr.html">fr</a>
 | <a href="index-de.html">de</a>
 | <a href="index-es.html">es</a>
+| <a href="index-uk.html">uk</a>
 </div>
 <p><a href="https://ukrainewar.carrd.co/"><img src="StandWithUkraine.svg" alt="standwithukraine"></a></p>
 <p>Data compiled from <a href="&{base_url}">&{base_url}</a>.</p>
