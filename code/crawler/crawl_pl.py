@@ -11,7 +11,8 @@ from crawl_fci import FciCrawler, FciDumper
 class PlParser(core.Parser):
 
     def getcontent(self, request):
-        return {'url': request.url, 'body': html.fromstring(request.content)}
+        request.encoding = request.apparent_encoding
+        return {'url': request.url, 'body': html.fromstring(request.text)}
 
     def items(self, page):
         def text(body, xpath):
@@ -104,6 +105,6 @@ if __name__ == '__main__':
     parser.add_argument('-o', '--data-dir', default='data', help='Data directory')
     parser.add_argument('-l', '--language', default='pl', help='Language identifier')
     parser.add_argument('url', nargs='?', help='Base URL',
-        default='https://www.zkwp.pl/wzorce.php')
+        default='https://zkwp.pl/wzorce.php')
     args = parser.parse_args()
     main(args)
